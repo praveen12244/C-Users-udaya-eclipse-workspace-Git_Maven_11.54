@@ -8,6 +8,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.login.HotelLocator;
 
 public class Adda extends Baseclass {
 @BeforeClass
@@ -33,6 +34,9 @@ System.out.println("end");
 @Test
 public void test1() {
 	urlLaunch("https://adactinhotelapp.com/", 20);
+	HotelLocator l= new HotelLocator();
+	sendkeys(l.getUser(), "praveensu1");
+	System.out.println("username is praveensu1");
 	
 }
 }
